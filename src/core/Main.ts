@@ -238,6 +238,7 @@ export class Main {
      * @returns The created RenderView instance.
      */
   public createView(view: ViewParameters): RenderView {
+    console.log("456")
     if (this._renderManager.views.length === 0) this.setAnimationLoop();
     return this._renderManager.create(view);
   }
